@@ -19,7 +19,7 @@ function CatalogoProduto() {
                 {produtosFiltrados.map(produto => (
                     // Renderização e estilização condicional com operador ternário, extremamente útil.
                     <li key={produto.id} style={{ color: produto.disponivel ? 'green' : 'red' }}>
-                        {produto.nome}
+                        {produto.nome} - R$ {produto.preco} {produto.disponivel ? 'Disponível' : 'Indisponível'}
                     </li>
                 ))}
             </ul>

@@ -10,7 +10,7 @@ function CatalogoProduto() {
 
     const [visivel, setVisivel] = useState(true);
     // Não sabia que dava pra fazer isso, muito útil.
-    const produtosFiltrados = visivel ? produtos : produtos.filter(p => p.disponivel);
+    const produtosFiltrados = visivel ? produtos : produtos.filter(produto => produto.disponivel);
 
     return (
         <div>
